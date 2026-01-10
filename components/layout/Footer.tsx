@@ -15,14 +15,14 @@ export const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center p-1">
+            <div className="mb-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-2 inline-block mb-2 border border-white/20">
                 <Image
-                  src="/am-logo.svg"
+                  src="/logo_amall.PNG"
                   alt="AUTOS MALL LLC"
-                  width={40}
-                  height={40}
-                  className="object-contain"
+                  width={160}
+                  height={88}
+                  className="object-contain h-12 w-auto"
                 />
               </div>
               <div>

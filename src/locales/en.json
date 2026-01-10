@@ -2,113 +2,207 @@
   "landing": {
     "hero": {
       "badge1": "UniUni Certified Partner",
-      "badge2": "Last-Mile Delivery Experts",
-      "title1": "Delivering Excellence.",
-      "title2": "Every Package, Every Time.",
-      "subtitle": "AUTOS MALL LLC is your trusted Delivery Service Partner. We connect packages to families with speed, care, and reliability. Join our team of professional drivers or partner with us for your delivery needs.",
-      "cta1": "Join Our Team",
-      "cta2": "Partner With Us",
+      "badge2": "Entrepreneur Factory",
+      "title1": "From Driver",
+      "title2": "To Business Owner.",
+      "subtitle": "AUTOS MALL LLC is not just a delivery company. We're a transformation ecosystem that turns workers into entrepreneurs. Every delivery you make brings you one step closer to owning your own logistics business.",
+      "cta1": "Start Your Journey",
+      "cta2": "Learn How It Works",
       "trust1": "Licensed & Insured",
-      "trust2": "California Based",
-      "trust3": "24/7 Support"
+      "trust2": "$177B Market",
+      "trust3": "Proven System"
     },
     "stats": {
-      "deliveries": "Deliveries",
-      "drivers": "Active Drivers",
-      "satisfaction": "Satisfaction Rate",
-      "coverage": "Service Areas"
+      "deliveries": "Packages Delivered",
+      "drivers": "Future Entrepreneurs",
+      "satisfaction": "Success Rate",
+      "coverage": "States Covered"
+    },
+    "opportunity": {
+      "badge": "The Opportunity",
+      "title": "A $177 Billion Market. Your Piece of It.",
+      "subtitle": "The last-mile delivery market will grow to $453 billion by 2035. Those who control it, control the future of commerce. The question is: will you watch from the sidelines or grab your share?",
+      "stat1": "$177B",
+      "stat1Label": "Current Market Size",
+      "stat2": "156%",
+      "stat2Label": "Projected Growth",
+      "stat3": "50%",
+      "stat3Label": "Of Shipping Costs",
+      "stat4": "2035",
+      "stat4Label": "Year of Explosion"
     },
     "problem": {
-      "title": "Why Choose AUTOS MALL?",
-      "subtitle": "We understand that every package tells a story. That's why we treat each delivery like it's going to our own family.",
-      "problemTitle": "Common Delivery Issues",
-      "problem1": "Late deliveries that miss time windows",
-      "problem2": "Damaged packages due to careless handling",
-      "problem3": "Poor communication and tracking",
-      "problem4": "Unreliable drivers without proper vetting",
+      "title": "Are You Tired of Trading Time for Money?",
+      "subtitle": "Think about it: You work 40, 50, 60 hours a week. At the end of the month, you have just enough to survive. You're not building wealth. You're not creating a legacy. What if there was another way?",
+      "problemTitle": "The Traditional Job Trap",
+      "problem1": "You work hard but build nothing of your own",
+      "problem2": "Your income depends 100% on showing up",
+      "problem3": "No path to financial independence",
+      "problem4": "Start from zero every single month",
       "solutionTitle": "The AUTOS MALL Difference",
-      "solution1": "Real-time tracking with accurate ETAs",
-      "solution2": "Careful handling - we treat packages like our own",
-      "solution3": "Photo proof of delivery for every package",
-      "solution4": "Professional, vetted drivers you can trust"
+      "solution1": "Every delivery builds toward YOUR business",
+      "solution2": "A clear 4-level path to ownership",
+      "solution3": "Mentorship from those who've done it",
+      "solution4": "Technology that accelerates your progress"
+    },
+    "elevation": {
+      "badge": "The Elevation System",
+      "title": "Your Path to Freedom",
+      "subtitle": "We don't create jobs. We create entrepreneurs. Here's exactly how you'll go from driver to business owner.",
+      "level1": {
+        "name": "Collaborator",
+        "timeline": "Months 0-6",
+        "earnings": "$800-$2,000/week",
+        "desc": "Start earning immediately while learning the business. Flexible hours, optimized routes, assigned mentor.",
+        "highlight": "You're not an employee. You're a partner in training."
+      },
+      "level2": {
+        "name": "Associate",
+        "timeline": "Months 6-18",
+        "earnings": "$2,000-$3,500/week",
+        "desc": "Build your first mini-team. Earn commissions on referrals. Access premium routes and leadership training.",
+        "highlight": "You're no longer just delivering. You're building a team."
+      },
+      "level3": {
+        "name": "Strategic Partner",
+        "timeline": "Months 18-36",
+        "earnings": "$4,000-$6,000/week",
+        "desc": "Run your own operation under our umbrella. Manage vehicles and collaborators. Share in the profits.",
+        "highlight": "Now you have your own business. We gave you the tools."
+      },
+      "level4": {
+        "name": "Independent DSP",
+        "timeline": "Month 36+",
+        "earnings": "$15,000+/month profit",
+        "desc": "Direct contract with carriers. Your own company. Your own fleet. AUTOS MALL as ally, not boss.",
+        "highlight": "You made it. You own your destiny."
+      },
+      "cta": "See Your Path"
     },
     "howItWorks": {
-      "title": "How It Works",
-      "subtitle": "Simple, efficient, reliable. That's our promise.",
+      "title": "How the Transformation Happens",
+      "subtitle": "Every step is designed to elevate you. Nothing is by accident.",
       "step1": {
-        "title": "Package Assignment",
-        "desc": "Packages are assigned to our drivers through UniUni's smart routing system for maximum efficiency."
+        "title": "AI-Optimized Routes",
+        "desc": "Our RouteGenius algorithm ensures 98% on-time delivery while maximizing your earnings per hour. You work smarter, not harder."
       },
       "step2": {
-        "title": "Route Optimization",
-        "desc": "Our drivers follow optimized routes to ensure on-time delivery while minimizing environmental impact."
+        "title": "Personalized Mentorship",
+        "desc": "From day one, you're matched with a mentor who's already walked the path. Real guidance from real success stories."
       },
       "step3": {
-        "title": "Proof of Delivery",
-        "desc": "Every delivery is documented with photo proof, ensuring complete transparency and accountability."
+        "title": "Accelerated Growth",
+        "desc": "Our MotivAI system tracks your goals and personalizes your journey. Daily challenges, weekly wins, monthly milestones."
       }
     },
     "features": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive delivery solutions for every need.",
+      "title": "The Technology Behind Your Success",
+      "subtitle": "We've built an entire ecosystem to ensure you succeed.",
       "tracking": {
-        "title": "Real-Time Tracking",
-        "desc": "Know exactly where your package is at all times with GPS tracking."
+        "title": "Real-Time Everything",
+        "desc": "Track your earnings, progress, and path to the next level in real-time. No surprises."
       },
       "speed": {
-        "title": "Same-Day Delivery",
-        "desc": "Fast, reliable same-day delivery for urgent packages."
+        "title": "Instant Payments",
+        "desc": "Get paid every Monday via direct deposit. See your earnings accumulate throughout the week."
       },
       "care": {
-        "title": "Careful Handling",
-        "desc": "Every package is handled with care, from pickup to delivery."
+        "title": "Community Support",
+        "desc": "Join a community of ambitious people. Celebrate wins together. Lift each other up."
       },
       "drivers": {
-        "title": "Professional Drivers",
-        "desc": "Background-checked, trained drivers who represent your brand well."
+        "title": "Professional Training",
+        "desc": "Free business training, logistics expertise, and leadership skills. Everything you need to level up."
       },
       "support": {
-        "title": "24/7 Support",
-        "desc": "Our team is always available to help with any delivery questions."
+        "title": "24/7 Assistance",
+        "desc": "Questions at 2 AM? We've got you. Our support team never sleeps."
       },
       "coverage": {
-        "title": "Wide Coverage",
-        "desc": "Serving major areas throughout California and beyond."
+        "title": "Growing Territory",
+        "desc": "As we expand, your opportunities expand. Texas today. California tomorrow. The country next."
+      }
+    },
+    "testimonials": {
+      "badge": "Success Stories",
+      "title": "They Did It. So Can You.",
+      "subtitle": "Real people who transformed their lives through AUTOS MALL.",
+      "testimonial1": {
+        "quote": "I came to AUTOS MALL after losing my job in the pandemic. I just wanted to pay bills. Three years later, I have 8 vehicles and a team of 12 people. I earn more than my ex-boss.",
+        "name": "Maria G.",
+        "role": "From Driver to Fleet Owner",
+        "result": "8 vehicles, 12 employees"
+      },
+      "testimonial2": {
+        "quote": "I used to fix other people's cars 12 hours a day. A friend invited me to AUTOS MALL. I was skeptical. Today I manage 15 drivers and I'm months away from my own DSP.",
+        "name": "Carlos R.",
+        "role": "From Mechanic to Operations Manager",
+        "result": "15 drivers under management"
+      },
+      "testimonial3": {
+        "quote": "I needed flexibility for my kids. AUTOS MALL gave me that. But it gave me something more: the vision that I could be more than an employee. Now my kids see their mom building a business.",
+        "name": "Ana M.",
+        "role": "From Single Mom to Entrepreneur",
+        "result": "Work-life balance + growing income"
       }
     },
     "drivers": {
-      "badge": "Join Our Team",
-      "title": "Become a Driver",
-      "desc": "Are you looking for flexible work with great earning potential? Join AUTOS MALL LLC as an Independent Contract Driver. Use your own vehicle, set your own schedule, and earn competitive pay per delivery.",
+      "badge": "Limited Spots Available",
+      "title": "Your Transformation Starts Here",
+      "desc": "Stop trading time for money. Start building something of your own. We're looking for ambitious people ready to take control of their financial future.",
       "req1": "Valid driver's license",
       "req2": "Reliable vehicle (car, van, or SUV)",
       "req3": "Smartphone with GPS",
       "req4": "Clean driving record",
-      "req5": "Ability to lift up to 50 lbs",
-      "earnings": "Earnings Potential",
+      "req5": "The desire to be MORE",
+      "earnings": "Starting Potential",
       "earningsValue": "$800-$2,000/week",
-      "cta": "Apply Now"
+      "benefits": {
+        "benefit1": "Flexible schedule (5am-7pm)",
+        "benefit2": "Weekly direct deposit",
+        "benefit3": "Assigned mentor from day 1",
+        "benefit4": "Path to business ownership"
+      },
+      "cta": "Apply Now - Limited Spots",
+      "urgency": "Only accepting 10 new collaborators this month"
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Whether you're looking to join our driver team or need reliable delivery services, we're here to help.",
-      "button1": "Join as Driver",
-      "button2": "Contact Us",
-      "deliveries": "Packages delivered with care",
-      "rating": "Customer satisfaction"
+      "title": "The Question Isn't If You Can Do It",
+      "subtitle": "The question is: Will you try? Every day you wait is a day someone else is building what could be yours.",
+      "button1": "Start My Journey",
+      "button2": "I Have Questions",
+      "deliveries": "Lives transformed",
+      "rating": "Average satisfaction"
     },
-    "team": {
-      "badge": "Our Team",
-      "title": "Meet the Team",
-      "subtitle": "Family-owned and operated, we bring a personal touch to every delivery."
+    "faq": {
+      "badge": "Common Questions",
+      "title": "Still Have Doubts?",
+      "q1": "Is this too good to be true?",
+      "a1": "We understand the skepticism. That's why we don't ask for faith—we show results. Here are real testimonials from real people you can verify. And getting started costs you nothing.",
+      "q2": "What if it doesn't work for me?",
+      "a2": "The system works if you work. We don't promise easy money. We promise that if you put in the effort, you'll have a clear path to something bigger. No contracts tie you down.",
+      "q3": "I've tried delivery before and it didn't work",
+      "a3": "The difference is you were alone before. Here you have technology optimizing your routes, a community supporting you, and a mentor who's already walked the path.",
+      "q4": "Do I need money to invest?",
+      "a4": "Nothing to start as a Collaborator. Use your current vehicle, earn from day one. Only when you're ready to grow do we talk about investments. Everything is gradual."
+    },
+    "finalCta": {
+      "title": "Your Future Is Waiting",
+      "line1": "In 3 years, you'll be somewhere.",
+      "line2": "The question is: will you be in the same place, or will you have built something extraordinary?",
+      "line3": "The decision is yours. The opportunity is here. The time is now.",
+      "button": "Begin My Transformation",
+      "disclaimer": "No obligation. No cost to start. Just the first step toward your freedom."
     }
   },
   "navigation": {
     "home": "Home",
-    "services": "Services",
-    "drivers": "For Drivers",
+    "services": "How It Works",
+    "drivers": "Start Your Journey",
     "contact": "Contact",
-    "about": "About Us"
+    "about": "Our Mission",
+    "login": "Sign In",
+    "apply": "Apply Now"
   },
   "common": {
     "loading": "Loading...",
@@ -125,40 +219,159 @@
   "footer": {
     "brand": {
       "name": "AUTOS MALL LLC",
-      "tagline": "Delivery Service Partner",
-      "description": "Your trusted partner for last-mile delivery services. We connect packages to families with speed, care, and reliability."
+      "tagline": "Entrepreneur Factory",
+      "description": "We don't create jobs. We create business owners. Join the ecosystem that's transforming the last mile—one life at a time."
     },
     "services": {
-      "title": "Services",
-      "sameDay": "Same-Day Delivery",
-      "residential": "Residential Delivery",
-      "commercial": "Commercial Delivery",
-      "tracking": "Package Tracking"
+      "title": "The System",
+      "sameDay": "The 4-Level Path",
+      "residential": "AI Route Optimization",
+      "commercial": "Mentorship Program",
+      "tracking": "Community & Support"
     },
     "company": {
       "title": "Company",
-      "about": "About Us",
-      "careers": "Careers",
-      "contact": "Contact",
+      "about": "Our Mission",
+      "careers": "Join the Team",
+      "contact": "Contact Us",
       "partner": "Partner With Us"
     },
     "drivers": {
-      "title": "For Drivers",
-      "apply": "Apply Now",
+      "title": "Future Entrepreneurs",
+      "apply": "Start Your Journey",
       "requirements": "Requirements",
-      "earnings": "Earnings",
-      "support": "Driver Support"
+      "earnings": "Earnings Potential",
+      "support": "Success Stories"
     },
     "stats": {
-      "deliveries": "Deliveries",
+      "deliveries": "Packages",
       "rating": "Rating",
-      "drivers": "Drivers",
-      "areas": "Service Areas"
+      "drivers": "Entrepreneurs",
+      "areas": "Markets"
     },
     "bottom": {
       "copyright": "© 2025 AUTOS MALL LLC. All rights reserved.",
       "partner": "UniUni Certified Partner",
-      "location": "California, USA"
+      "location": "Texas & California, USA"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back, Future Entrepreneur",
+      "subtitle": "Sign in to continue your journey",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "forgotPassword": "Forgot password?",
+      "submit": "Sign In",
+      "loading": "Signing in...",
+      "or": "or",
+      "noAccount": "Ready to start your journey?",
+      "registerLink": "Apply now",
+      "driverCta": "Want to transform your future?",
+      "driverCtaLink": "Start here →",
+      "backToHome": "Back to home",
+      "registeredSuccess": "Application submitted! Check your email to verify and begin your transformation."
+    },
+    "register": {
+      "title": "Begin Your Transformation",
+      "subtitle": "The first step toward owning your future",
+      "driverSignup": "Future Entrepreneur Application",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Create a password (min. 6 characters)",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "terms": "I agree to the",
+      "termsLink": "Terms of Service",
+      "and": "and",
+      "privacyLink": "Privacy Policy",
+      "submit": "Start My Journey",
+      "loading": "Creating your future...",
+      "or": "or",
+      "hasAccount": "Already on your journey?",
+      "loginLink": "Sign in",
+      "backToHome": "Back to home",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters"
+    }
+  },
+  "dashboard": {
+    "nav": {
+      "overview": "My Progress",
+      "deliveries": "Deliveries",
+      "drivers": "My Team",
+      "vehicles": "Fleet",
+      "tracking": "Live Tracking",
+      "payments": "Earnings",
+      "reports": "Analytics",
+      "documents": "Documents",
+      "myDeliveries": "Today's Route",
+      "myEarnings": "My Earnings",
+      "myVehicle": "My Vehicle",
+      "myDocuments": "My Documents",
+      "settings": "Settings",
+      "help": "Help & Support"
+    },
+    "header": {
+      "search": "Search...",
+      "profile": "My Profile",
+      "settings": "Settings",
+      "signOut": "Sign Out"
+    },
+    "overview": {
+      "title": "Your Journey Dashboard",
+      "subtitle": "Welcome back, {name}. Keep building your future."
+    },
+    "stats": {
+      "totalDeliveries": "Total Deliveries",
+      "activeDrivers": "Team Members",
+      "pendingDeliveries": "Pending",
+      "completedToday": "Completed Today",
+      "myDeliveriesToday": "Today's Deliveries",
+      "completed": "Completed",
+      "pending": "Pending",
+      "earnings": "Earnings",
+      "thisMonth": "This month",
+      "online": "Online now",
+      "needsAttention": "Needs attention",
+      "deliveries": "Deliveries",
+      "assigned": "Assigned",
+      "today": "Today",
+      "toDeliver": "To deliver",
+      "thisWeek": "This week"
+    },
+    "recentDeliveries": {
+      "title": "Recent Deliveries",
+      "viewAll": "View All",
+      "empty": "No deliveries yet. Your journey begins with the first package."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newDelivery": "New Delivery",
+      "newDeliveryDesc": "Create a new delivery order",
+      "manageDrivers": "Manage Team",
+      "manageDriversDesc": "View and grow your team",
+      "liveTracking": "Live Tracking",
+      "liveTrackingDesc": "Track deliveries in real-time",
+      "viewMyDeliveries": "Today's Route",
+      "viewMyDeliveriesDesc": "See your optimized route",
+      "viewEarnings": "My Earnings",
+      "viewEarningsDesc": "Track your progress to the next level",
+      "alerts": "Updates",
+      "noAlerts": "You're all caught up!"
+    },
+    "elevation": {
+      "title": "Your Elevation Progress",
+      "currentLevel": "Current Level",
+      "nextLevel": "Next Level",
+      "progress": "Progress",
+      "requirements": "Requirements for next level",
+      "mentor": "Your Mentor"
     }
   }
 }

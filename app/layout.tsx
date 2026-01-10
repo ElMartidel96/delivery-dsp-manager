@@ -42,7 +42,8 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo_amall.PNG" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo_amall.PNG" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
