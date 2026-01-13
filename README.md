@@ -1,78 +1,97 @@
 # AUTOS MALL LLC - Delivery Service Partner Platform
 
-Professional delivery management platform for AUTOS MALL LLC, a UniUni-certified Delivery Service Partner.
+Plataforma profesional de gestión de entregas para AUTOS MALL LLC, DSP certificado por UniUni.
 
-## Features
+## Estado del Proyecto
 
-- **Bilingual Support** - Full English/Spanish (EN/ES) internationalization
-- **Dark/Light Mode** - Theme toggle for user preference
-- **Glass Morphism UI** - Modern, professional design system
-- **Responsive Design** - Mobile-first approach
-- **Driver Recruitment** - Dedicated section for driver applications
-- **Service Showcase** - Comprehensive service presentation
+| Componente | Estado |
+|------------|--------|
+| Landing Page | Operativa |
+| i18n (EN/ES) | Operativo |
+| Modo Oscuro/Claro | Operativo |
+| Supabase (Auth/DB) | Pendiente |
+| Sistema de Entregas | Pendiente |
+| POD (Proof of Delivery) | Pendiente |
+| Dashboard Admin | Pendiente |
 
 ## Tech Stack
 
-- **Framework**: Next.js 15.1 (App Router)
-- **React**: React 19.0
+- **Framework**: Next.js 15.5.9 (App Router)
+- **React**: 19.2.3
 - **Styling**: Tailwind CSS 3.4 + Glass Morphism
-- **i18n**: next-intl 4.6
-- **UI Components**: Radix UI
-- **Icons**: Lucide React
+- **i18n**: next-intl 4.7
+- **UI**: Radix UI + Lucide React
 - **Animations**: Framer Motion
 - **Theme**: next-themes
 - **Deployment**: Vercel
 
-## Requirements
+## Requisitos
 
-- Node.js 20.0 or higher
-- npm 10.0 or higher
+- Node.js 20.0+
+- pnpm 10.0+
 
-## Getting Started
+## Instalación
 
 ```bash
-# Install dependencies
-npm install
+# Clonar repositorio
+git clone https://github.com/ElMartidel96/delivery-dsp-manager.git
+cd delivery-dsp-manager
 
-# Run development server
-npm run dev
+# Instalar dependencias
+pnpm install
 
-# Build for production
-npm run build
-
-# Start production server
-npm start
+# Iniciar desarrollo
+pnpm dev
 ```
 
-## Project Structure
+## Scripts
+
+```bash
+pnpm dev          # Servidor de desarrollo
+pnpm build        # Build de producción
+pnpm start        # Servidor de producción
+pnpm lint         # ESLint
+pnpm type-check   # Verificar tipos
+pnpm format       # Formatear código
+```
+
+## Estructura del Proyecto
 
 ```
-├── app/                    # Next.js app directory
+├── app/                    # Next.js App Router
 │   ├── api/               # API routes
-│   ├── globals.css        # Global styles
+│   ├── globals.css        # Estilos globales
 │   ├── layout.tsx         # Root layout
 │   └── page.tsx           # Landing page
 ├── components/
 │   ├── layout/            # Navbar, Footer
 │   ├── providers/         # Theme provider
-│   └── ui/                # UI components
-├── lib/                   # Utilities
-├── public/                # Static assets
+│   └── ui/                # Componentes UI
+├── docs/                  # Documentación
+│   ├── PLAN_MAESTRO.md   # Roadmap completo
+│   └── INTEGRACIONES.md  # Estado de integraciones
+├── lib/                   # Utilidades
+├── public/                # Assets estáticos
 └── src/
-    ├── i18n/              # i18n configuration
-    └── locales/           # Translation files (EN/ES)
+    ├── i18n/              # Configuración i18n
+    └── locales/           # Traducciones (EN/ES)
 ```
 
-## Brand Colors
+## Documentación
 
-- **AM Navy**: `#1e3a5f` - Primary, trust, professionalism
-- **AM Orange**: `#f5a623` - Energy, speed, action
-- **AM Green**: `#7cb342` - Growth, success, reliability
+- [Plan Maestro](./docs/PLAN_MAESTRO.md) - Roadmap y especificaciones
+- [Integraciones](./docs/INTEGRACIONES.md) - Estado de servicios externos
 
-## License
+## Colores de Marca
 
-© 2026 AUTOS MALL LLC. All rights reserved.
+- **AM Navy**: `#1e3a5f` - Primario, confianza
+- **AM Orange**: `#f5a623` - Energía, acción
+- **AM Green**: `#7cb342` - Éxito, crecimiento
+
+## Licencia
+
+2026 AUTOS MALL LLC. Todos los derechos reservados.
 
 ---
 
-Made by [mbxarts.com](https://mbxarts.com) - The Moon in a Box property
+Desarrollado por [mbxarts.com](https://mbxarts.com)

@@ -5,8 +5,9 @@
  * AUTOS MALL LLC - LANDING PAGE
  * ============================================================================
  *
- * Professional landing page for delivery service partner company.
+ * Professional landing page - "Entrepreneur Factory" concept
  * Features: i18n (EN/ES), Dark/Light mode, Glass morphism design
+ * Sales psychology techniques: scarcity, social proof, transformation narrative
  * ============================================================================
  */
 
@@ -27,14 +28,25 @@ import {
   CheckCircle2,
   ArrowRight,
   Star,
-  Camera,
   Navigation,
   Headphones,
   DollarSign,
   Car,
   Smartphone,
   FileCheck,
-  Award
+  Award,
+  TrendingUp,
+  Target,
+  Zap,
+  ChevronDown,
+  ChevronUp,
+  Rocket,
+  Crown,
+  Briefcase,
+  Building2,
+  Brain,
+  Heart,
+  MessageCircle
 } from 'lucide-react';
 
 // Animations
@@ -54,15 +66,25 @@ const animations = `
                   0 0 60px rgba(30, 58, 95, 0.3);
     }
   }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
 `;
 
 export default function LandingPage() {
   const t = useTranslations('landing');
   const [isVisible, setIsVisible] = useState(false);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
   return (
     <div className="min-h-screen theme-gradient-bg text-gray-900 dark:text-white">
@@ -90,7 +112,7 @@ export default function LandingPage() {
                   <span className="text-xs font-medium text-am-navy dark:text-white">{t('hero.badge1')}</span>
                 </div>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-am-navy/10 dark:bg-white/10 backdrop-blur-sm rounded-full border border-am-navy/20 dark:border-white/20 w-fit">
-                  <Package className="w-3.5 h-3.5 text-am-navy dark:text-am-orange" />
+                  <Rocket className="w-3.5 h-3.5 text-am-navy dark:text-am-orange" />
                   <span className="text-xs font-medium text-am-navy dark:text-white">{t('hero.badge2')}</span>
                 </div>
               </div>
@@ -114,18 +136,18 @@ export default function LandingPage() {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-3 pt-2">
                 <Link
-                  href="#drivers"
+                  href="/register?role=driver"
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-am-navy to-am-navy-light rounded-lg font-semibold text-white text-sm hover:from-am-navy-light hover:to-am-navy transition-all shadow-md hover:shadow-lg hover:scale-105"
                 >
-                  <Truck className="w-4 h-4" />
+                  <Rocket className="w-4 h-4" />
                   {t('hero.cta1')}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
-                  href="#contact"
+                  href="#elevation"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/70 dark:bg-white/10 backdrop-blur-sm rounded-lg font-semibold text-sm text-gray-700 dark:text-white border border-gray-200 dark:border-white/20 hover:bg-white dark:hover:bg-white/20 transition-all hover:scale-105"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Target className="w-4 h-4" />
                   {t('hero.cta2')}
                 </Link>
               </div>
@@ -137,11 +159,11 @@ export default function LandingPage() {
                   <span className="text-xs">{t('hero.trust1')}</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                  <MapPin className="w-4 h-4 text-am-navy dark:text-am-orange" />
+                  <TrendingUp className="w-4 h-4 text-am-navy dark:text-am-orange" />
                   <span className="text-xs">{t('hero.trust2')}</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-                  <Headphones className="w-4 h-4 text-am-orange" />
+                  <CheckCircle2 className="w-4 h-4 text-am-orange" />
                   <span className="text-xs">{t('hero.trust3')}</span>
                 </div>
               </div>
@@ -152,31 +174,31 @@ export default function LandingPage() {
               <div className="relative flex items-center justify-center">
                 {/* Glow effect */}
                 <div
-                  className="absolute w-80 h-80 rounded-full opacity-60"
+                  className="absolute w-full max-w-lg aspect-[16/9] rounded-3xl opacity-60"
                   style={{
-                    background: 'radial-gradient(circle, rgba(245,166,35,0.3) 0%, rgba(30,58,95,0.2) 50%, transparent 70%)',
+                    background: 'radial-gradient(ellipse, rgba(245,166,35,0.3) 0%, rgba(30,58,95,0.2) 50%, transparent 70%)',
                     animation: 'pulse-glow 3s ease-in-out infinite',
                   }}
                 />
 
                 {/* Logo Container */}
-                <div className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-3xl glass-crystal p-4 flex items-center justify-center" style={{ animation: 'float 4s ease-in-out infinite' }}>
+                <div className="relative w-full max-w-lg rounded-3xl glass-crystal p-6 flex items-center justify-center" style={{ animation: 'float 4s ease-in-out infinite' }}>
                   <Image
-                    src="/am-logo.svg"
+                    src="/logo_amall.PNG"
                     alt="AUTOS MALL LLC"
-                    width={280}
-                    height={280}
-                    className="object-contain"
+                    width={500}
+                    height={276}
+                    className="object-contain w-full h-auto"
                     priority
                   />
                 </div>
 
                 {/* Floating elements */}
                 <div className="absolute -top-4 -right-4 p-3 rounded-xl glass-crystal" style={{ animation: 'float 3s ease-in-out infinite' }}>
-                  <Package className="w-6 h-6 text-am-orange" />
+                  <Crown className="w-6 h-6 text-am-orange" />
                 </div>
                 <div className="absolute -bottom-4 -left-4 p-3 rounded-xl glass-crystal" style={{ animation: 'float 3.5s ease-in-out infinite 0.5s' }}>
-                  <Truck className="w-6 h-6 text-am-navy dark:text-am-green" />
+                  <TrendingUp className="w-6 h-6 text-am-navy dark:text-am-green" />
                 </div>
               </div>
             </div>
@@ -189,25 +211,58 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
             {[
-              { icon: Package, label: t('stats.deliveries'), value: '10,000+', color: 'am-orange' },
-              { icon: Users, label: t('stats.drivers'), value: '50+', color: 'am-navy' },
-              { icon: Star, label: t('stats.satisfaction'), value: '98%', color: 'am-green' },
-              { icon: MapPin, label: t('stats.coverage'), value: 'CA', color: 'am-orange' },
+              { icon: Package, label: t('stats.deliveries'), color: 'am-orange', darkColor: 'am-orange' },
+              { icon: Users, label: t('stats.drivers'), color: 'am-navy', darkColor: 'am-green' },
+              { icon: Star, label: t('stats.satisfaction'), color: 'am-green', darkColor: 'am-green' },
+              { icon: MapPin, label: t('stats.coverage'), value: 'Houston, TX', color: 'am-orange', darkColor: 'am-orange' },
             ].map((stat, i) => (
               <div
                 key={i}
-                className="p-4 rounded-xl glass-crystal hover:scale-105 transition-all"
+                className="p-4 rounded-xl glass-crystal hover:scale-105 transition-all text-center"
               >
-                <stat.icon className={`w-6 h-6 text-${stat.color} mb-2`} />
-                <div className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-0.5">{stat.value}</div>
-                <div className="text-gray-500 dark:text-gray-400 text-xs">{stat.label}</div>
+                <stat.icon className={`w-8 h-8 text-${stat.color} dark:text-${stat.darkColor} mx-auto mb-2`} />
+                {stat.value && <div className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-0.5">{stat.value}</div>}
+                <div className="text-gray-600 dark:text-gray-300 text-sm font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* WHY CHOOSE US SECTION */}
+      {/* OPPORTUNITY SECTION */}
+      <section className="relative py-16 px-4 bg-gradient-to-b from-transparent via-am-navy/5 dark:via-am-navy/20 to-transparent">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-am-orange/10 dark:bg-am-orange/20 rounded-full mb-4">
+              <TrendingUp className="w-4 h-4 text-am-orange" />
+              <span className="text-sm font-medium text-am-orange">{t('opportunity.badge')}</span>
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              {t('opportunity.title')}
+            </h2>
+            <p className="text-base text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+              {t('opportunity.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { value: t('opportunity.stat1'), label: t('opportunity.stat1Label'), icon: DollarSign, color: 'am-orange' },
+              { value: t('opportunity.stat2'), label: t('opportunity.stat2Label'), icon: TrendingUp, color: 'am-green' },
+              { value: t('opportunity.stat3'), label: t('opportunity.stat3Label'), icon: Target, color: 'am-orange' },
+              { value: t('opportunity.stat4'), label: t('opportunity.stat4Label'), icon: Rocket, color: 'am-green' },
+            ].map((stat, i) => (
+              <div key={i} className="p-6 rounded-2xl glass-crystal text-center hover:scale-105 transition-all">
+                <stat.icon className={`w-8 h-8 text-${stat.color} mx-auto mb-3`} />
+                <div className={`text-3xl lg:text-4xl font-bold text-${stat.color} mb-1`}>{stat.value}</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US / PROBLEM-SOLUTION SECTION */}
       <section className="relative py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
@@ -263,6 +318,83 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* ELEVATION SYSTEM SECTION */}
+      <section id="elevation" className="relative py-16 px-4 bg-gradient-to-b from-transparent via-am-orange/5 dark:via-am-orange/10 to-transparent">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-am-navy/10 dark:bg-am-navy/30 rounded-full mb-4">
+              <Rocket className="w-4 h-4 text-am-navy dark:text-am-orange" />
+              <span className="text-sm font-medium text-am-navy dark:text-am-orange">{t('elevation.badge')}</span>
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              {t('elevation.title')}
+            </h2>
+            <p className="text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              {t('elevation.subtitle')}
+            </p>
+          </div>
+
+          {/* Elevation Levels */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { level: 1, icon: Truck, color: 'am-navy', darkColor: 'blue-400', bgGradient: 'from-am-navy/10 to-am-navy/5' },
+              { level: 2, icon: Users, color: 'am-orange', darkColor: 'am-orange', bgGradient: 'from-am-orange/10 to-am-orange/5' },
+              { level: 3, icon: Briefcase, color: 'am-green', darkColor: 'am-green', bgGradient: 'from-am-green/10 to-am-green/5' },
+              { level: 4, icon: Building2, color: 'am-orange', darkColor: 'am-orange', bgGradient: 'from-am-orange/20 to-am-navy/10' },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className={`relative p-6 rounded-2xl bg-gradient-to-br ${item.bgGradient} border border-${item.color}/20 dark:border-${item.darkColor}/30 hover:scale-[1.02] transition-all group`}
+              >
+                {/* Level indicator */}
+                <div className={`absolute -top-3 -left-3 w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shadow-lg bg-${item.color} dark:bg-${item.darkColor} text-white`}>
+                  {item.level}
+                </div>
+
+                <div className="mt-4">
+                  <item.icon className={`w-10 h-10 text-${item.color} dark:text-${item.darkColor} mb-3`} />
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    {t(`elevation.level${item.level}.name`)}
+                  </h3>
+                  <div className={`text-xs font-medium text-${item.color} dark:text-${item.darkColor} mb-2`}>
+                    {t(`elevation.level${item.level}.timeline`)}
+                  </div>
+                  <div className="text-lg font-bold text-am-green mb-3">
+                    {t(`elevation.level${item.level}.earnings`)}
+                  </div>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                    {t(`elevation.level${item.level}.desc`)}
+                  </p>
+                  <div className={`p-3 bg-${item.color}/10 dark:bg-${item.color}/20 rounded-lg`}>
+                    <p className="text-xs font-medium italic text-gray-700 dark:text-gray-300">
+                      &quot;{t(`elevation.level${item.level}.highlight`)}&quot;
+                    </p>
+                  </div>
+                </div>
+
+                {/* Arrow connector for desktop */}
+                {i < 3 && (
+                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="w-6 h-6 text-gray-300 dark:text-gray-600" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/register?role=driver"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-am-navy to-am-orange rounded-lg font-semibold text-white hover:from-am-orange hover:to-am-navy transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              <Rocket className="w-5 h-5" />
+              {t('elevation.cta')}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* HOW IT WORKS SECTION */}
       <section className="relative py-12 px-4">
         <div className="max-w-6xl mx-auto">
@@ -277,9 +409,9 @@ export default function LandingPage() {
 
           <div className="grid lg:grid-cols-3 gap-6">
             {[
-              { step: 1, icon: Package, color: 'am-navy', title: t('howItWorks.step1.title'), desc: t('howItWorks.step1.desc') },
-              { step: 2, icon: Navigation, color: 'am-orange', title: t('howItWorks.step2.title'), desc: t('howItWorks.step2.desc') },
-              { step: 3, icon: Camera, color: 'am-green', title: t('howItWorks.step3.title'), desc: t('howItWorks.step3.desc') },
+              { step: 1, icon: Brain, color: 'am-navy', darkColor: 'blue-400', title: t('howItWorks.step1.title'), desc: t('howItWorks.step1.desc') },
+              { step: 2, icon: Heart, color: 'am-orange', darkColor: 'am-orange', title: t('howItWorks.step2.title'), desc: t('howItWorks.step2.desc') },
+              { step: 3, icon: Zap, color: 'am-green', darkColor: 'am-green', title: t('howItWorks.step3.title'), desc: t('howItWorks.step3.desc') },
             ].map((item, i) => (
               <div key={i} className="relative group">
                 {/* Connector line */}
@@ -289,12 +421,12 @@ export default function LandingPage() {
 
                 <div className="relative z-10 p-6 rounded-2xl glass-crystal hover:scale-[1.02] transition-all">
                   {/* Step number */}
-                  <div className={`absolute -top-3 -left-3 w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shadow-lg bg-${item.color} text-white`}>
+                  <div className={`absolute -top-3 -left-3 w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shadow-lg bg-${item.color} dark:bg-${item.darkColor} text-white`}>
                     {item.step}
                   </div>
 
-                  <div className={`p-3 bg-${item.color}/10 dark:bg-${item.color}/20 rounded-xl w-fit mb-4 mt-2`}>
-                    <item.icon className={`w-6 h-6 text-${item.color}`} />
+                  <div className={`p-3 bg-${item.color}/10 dark:bg-${item.darkColor}/20 rounded-xl w-fit mb-4 mt-2`}>
+                    <item.icon className={`w-6 h-6 text-${item.color} dark:text-${item.darkColor}`} />
                   </div>
 
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>
@@ -306,7 +438,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
+      {/* SERVICES/FEATURES SECTION */}
       <section id="services" className="relative py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
@@ -320,19 +452,19 @@ export default function LandingPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { icon: MapPin, title: t('features.tracking.title'), desc: t('features.tracking.desc'), color: 'am-navy' },
-              { icon: Clock, title: t('features.speed.title'), desc: t('features.speed.desc'), color: 'am-orange' },
-              { icon: Package, title: t('features.care.title'), desc: t('features.care.desc'), color: 'am-green' },
-              { icon: Users, title: t('features.drivers.title'), desc: t('features.drivers.desc'), color: 'am-navy' },
-              { icon: Headphones, title: t('features.support.title'), desc: t('features.support.desc'), color: 'am-orange' },
-              { icon: Navigation, title: t('features.coverage.title'), desc: t('features.coverage.desc'), color: 'am-green' },
+              { icon: MapPin, title: t('features.tracking.title'), desc: t('features.tracking.desc'), color: 'am-navy', darkColor: 'blue-400' },
+              { icon: DollarSign, title: t('features.speed.title'), desc: t('features.speed.desc'), color: 'am-orange', darkColor: 'am-orange' },
+              { icon: Heart, title: t('features.care.title'), desc: t('features.care.desc'), color: 'am-green', darkColor: 'am-green' },
+              { icon: Award, title: t('features.drivers.title'), desc: t('features.drivers.desc'), color: 'am-navy', darkColor: 'blue-400' },
+              { icon: Headphones, title: t('features.support.title'), desc: t('features.support.desc'), color: 'am-orange', darkColor: 'am-orange' },
+              { icon: Navigation, title: t('features.coverage.title'), desc: t('features.coverage.desc'), color: 'am-green', darkColor: 'am-green' },
             ].map((feature, i) => (
               <div
                 key={i}
                 className="p-5 rounded-xl glass-crystal hover:scale-105 transition-all"
               >
-                <div className={`p-2 bg-${feature.color}/10 dark:bg-${feature.color}/20 rounded-lg w-fit mb-3`}>
-                  <feature.icon className={`w-5 h-5 text-${feature.color}`} />
+                <div className={`p-2 bg-${feature.color}/10 dark:bg-${feature.darkColor}/20 rounded-lg w-fit mb-3`}>
+                  <feature.icon className={`w-5 h-5 text-${feature.color} dark:text-${feature.darkColor}`} />
                 </div>
                 <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">{feature.title}</h3>
                 <p className="text-xs text-gray-600 dark:text-gray-400">{feature.desc}</p>
@@ -342,15 +474,15 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* DRIVERS SECTION */}
+      {/* DRIVERS/APPLICATION SECTION */}
       <section id="drivers" className="relative py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="rounded-2xl p-6 lg:p-8 glass-crystal">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-am-orange/10 rounded-full mb-4">
-                  <Truck className="w-3.5 h-3.5 text-am-orange" />
-                  <span className="text-xs font-medium text-am-orange">{t('drivers.badge')}</span>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-red-500/10 rounded-full mb-4">
+                  <Zap className="w-3.5 h-3.5 text-red-500" />
+                  <span className="text-xs font-medium text-red-500">{t('drivers.badge')}</span>
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                   {t('drivers.title')}
@@ -364,7 +496,7 @@ export default function LandingPage() {
                     { icon: Car, text: t('drivers.req2') },
                     { icon: Smartphone, text: t('drivers.req3') },
                     { icon: Shield, text: t('drivers.req4') },
-                    { icon: Package, text: t('drivers.req5') },
+                    { icon: Rocket, text: t('drivers.req5') },
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 p-3 bg-gray-100 dark:bg-white/5 rounded-lg">
                       <item.icon className="w-5 h-5 text-am-green" />
@@ -385,30 +517,24 @@ export default function LandingPage() {
                   </div>
 
                   <div className="space-y-3 mb-6">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-am-green" />
-                      <span className="text-sm">Flexible schedule</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-am-green" />
-                      <span className="text-sm">Use your own vehicle</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-am-green" />
-                      <span className="text-sm">Weekly payments</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-am-green" />
-                      <span className="text-sm">Growth opportunities</span>
-                    </div>
+                    {['benefit1', 'benefit2', 'benefit3', 'benefit4'].map((benefit, i) => (
+                      <div key={i} className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-am-green" />
+                        <span className="text-sm">{t(`drivers.benefits.${benefit}`)}</span>
+                      </div>
+                    ))}
                   </div>
 
                   <Link
-                    href="#contact"
+                    href="/register?role=driver"
                     className="block w-full text-center py-3 bg-am-orange text-white rounded-lg font-semibold hover:bg-am-orange-light transition-colors"
                   >
                     {t('drivers.cta')}
                   </Link>
+
+                  <p className="text-xs text-center text-gray-400 mt-3">
+                    {t('drivers.urgency')}
+                  </p>
                 </div>
 
                 {/* Badge */}
@@ -421,7 +547,52 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* FINAL CTA SECTION */}
+      {/* FAQ SECTION */}
+      <section className="relative py-12 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-am-navy/10 dark:bg-am-navy/30 rounded-full mb-4">
+              <MessageCircle className="w-4 h-4 text-am-navy dark:text-am-orange" />
+              <span className="text-sm font-medium text-am-navy dark:text-am-orange">{t('faq.badge')}</span>
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
+              {t('faq.title')}
+            </h2>
+          </div>
+
+          <div className="space-y-3">
+            {[1, 2, 3, 4].map((i) => (
+              <div
+                key={i}
+                className="rounded-xl glass-crystal overflow-hidden"
+              >
+                <button
+                  onClick={() => toggleFaq(i)}
+                  className="w-full p-5 flex items-center justify-between text-left"
+                >
+                  <span className="font-semibold text-gray-900 dark:text-white pr-4">
+                    {t(`faq.q${i}`)}
+                  </span>
+                  {openFaq === i ? (
+                    <ChevronUp className="w-5 h-5 text-am-orange flex-shrink-0" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  )}
+                </button>
+                {openFaq === i && (
+                  <div className="px-5 pb-5">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                      {t(`faq.a${i}`)}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MAIN CTA SECTION */}
       <section id="contact" className="relative py-12 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -433,10 +604,10 @@ export default function LandingPage() {
 
           <div className="flex flex-wrap justify-center gap-3">
             <Link
-              href="#drivers"
+              href="/register?role=driver"
               className="group inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-am-navy to-am-navy-light rounded-lg font-semibold text-white hover:from-am-navy-light hover:to-am-navy transition-all shadow-md hover:shadow-lg hover:scale-105"
             >
-              <Truck className="w-5 h-5" />
+              <Rocket className="w-5 h-5" />
               {t('cta.button1')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -452,15 +623,48 @@ export default function LandingPage() {
           {/* Social proof */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-gray-500 dark:text-gray-400">
             <div className="flex items-center gap-2">
-              <Package className="w-5 h-5 text-am-orange" />
-              <span className="text-sm">10,000+ {t('cta.deliveries')}</span>
+              <Users className="w-5 h-5 text-am-orange" />
+              <span className="text-sm">{t('cta.deliveries')}</span>
             </div>
-            <div className="flex items-center gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-              ))}
-              <span className="text-sm ml-1">4.9/5 {t('cta.rating')}</span>
+            <div className="flex items-center gap-2">
+              <Heart className="w-5 h-5 text-am-green" />
+              <span className="text-sm">{t('cta.rating')}</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA SECTION */}
+      <section className="relative py-16 px-4 bg-gradient-to-b from-transparent via-am-navy/10 dark:via-am-navy/30 to-transparent">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center p-8 lg:p-12 rounded-3xl glass-crystal border border-am-orange/20">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              {t('finalCta.title')}
+            </h2>
+            <div className="space-y-4 mb-8">
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                {t('finalCta.line1')}
+              </p>
+              <p className="text-xl font-semibold text-gray-900 dark:text-white">
+                {t('finalCta.line2')}
+              </p>
+              <p className="text-lg text-am-orange font-medium">
+                {t('finalCta.line3')}
+              </p>
+            </div>
+
+            <Link
+              href="/register?role=driver"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-am-orange to-am-navy rounded-xl font-bold text-lg text-white hover:from-am-navy hover:to-am-orange transition-all shadow-xl hover:shadow-2xl hover:scale-105"
+            >
+              <Rocket className="w-6 h-6" />
+              {t('finalCta.button')}
+              <ArrowRight className="w-6 h-6" />
+            </Link>
+
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">
+              {t('finalCta.disclaimer')}
+            </p>
           </div>
         </div>
       </section>

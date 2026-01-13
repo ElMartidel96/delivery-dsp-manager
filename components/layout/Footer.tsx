@@ -15,14 +15,14 @@ export const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center p-1">
+            <div className="mb-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-2 inline-block mb-2 border border-white/20">
                 <Image
-                  src="/am-logo.svg"
+                  src="/logo_amall.PNG"
                   alt="AUTOS MALL LLC"
-                  width={40}
-                  height={40}
-                  className="object-contain"
+                  width={160}
+                  height={88}
+                  className="object-contain h-12 w-auto"
                 />
               </div>
               <div>
@@ -34,9 +34,9 @@ export const Footer: React.FC = () => {
               {t('brand.description')}
             </p>
             <div className="flex flex-col space-y-2 text-sm text-gray-300">
-              <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-am-orange transition-colors">
+              <a href="tel:+13466971041" className="flex items-center gap-2 hover:text-am-orange transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>(123) 456-7890</span>
+                <span>(346) 697-1041</span>
               </a>
               <a href="mailto:contact@autosmall.com" className="flex items-center gap-2 hover:text-am-orange transition-colors">
                 <Mail className="w-4 h-4" />
@@ -44,87 +44,82 @@ export const Footer: React.FC = () => {
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>California, USA</span>
+                <span>Houston, TX</span>
               </div>
             </div>
           </div>
 
-          {/* Services */}
+          {/* Services - El Sistema */}
           <div>
             <h3 className="font-semibold text-lg mb-4">{t('services.title')}</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link href="#services" className="hover:text-am-orange transition-colors">
+                <Link href="/#elevation" className="hover:text-am-orange transition-colors">
                   {t('services.sameDay')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-am-orange transition-colors">
+                <Link href="/#services" className="hover:text-am-orange transition-colors">
                   {t('services.residential')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-am-orange transition-colors">
+                <Link href="/mentorship" className="hover:text-am-orange transition-colors">
                   {t('services.commercial')}
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="hover:text-am-orange transition-colors">
+                <Link href="/dashboard/help" className="hover:text-am-orange transition-colors">
                   {t('services.tracking')}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company - Empresa */}
           <div>
             <h3 className="font-semibold text-lg mb-4">{t('company.title')}</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link href="#about" className="hover:text-am-orange transition-colors">
+                <Link href="/#about" className="hover:text-am-orange transition-colors">
                   {t('company.about')}
                 </Link>
               </li>
               <li>
-                <Link href="#drivers" className="hover:text-am-orange transition-colors">
+                <Link href="/register?role=driver" className="hover:text-am-orange transition-colors">
                   {t('company.careers')}
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-am-orange transition-colors">
+                <Link href="/contact" className="hover:text-am-orange transition-colors">
                   {t('company.contact')}
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-am-orange transition-colors">
+                <Link href="/partner" className="hover:text-am-orange transition-colors">
                   {t('company.partner')}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* For Drivers */}
+          {/* For Drivers - Futuros Empresarios */}
           <div>
             <h3 className="font-semibold text-lg mb-4">{t('drivers.title')}</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link href="#drivers" className="hover:text-am-orange transition-colors">
+                <Link href="/register?role=driver" className="hover:text-am-orange transition-colors">
                   {t('drivers.apply')}
                 </Link>
               </li>
               <li>
-                <Link href="#drivers" className="hover:text-am-orange transition-colors">
+                <Link href="/#drivers" className="hover:text-am-orange transition-colors">
                   {t('drivers.requirements')}
                 </Link>
               </li>
               <li>
-                <Link href="#drivers" className="hover:text-am-orange transition-colors">
+                <Link href="/#drivers" className="hover:text-am-orange transition-colors">
                   {t('drivers.earnings')}
-                </Link>
-              </li>
-              <li>
-                <Link href="#contact" className="hover:text-am-orange transition-colors">
-                  {t('drivers.support')}
                 </Link>
               </li>
             </ul>

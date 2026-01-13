@@ -1,114 +1,208 @@
 {
   "landing": {
     "hero": {
-      "badge1": "Socio Certificado UniUni",
-      "badge2": "Expertos en Última Milla",
-      "title1": "Entregando Excelencia.",
-      "title2": "Cada Paquete, Cada Vez.",
-      "subtitle": "AUTOS MALL LLC es tu socio de confianza para servicios de entrega. Conectamos paquetes con familias con rapidez, cuidado y confiabilidad. Únete a nuestro equipo de conductores profesionales o asóciate con nosotros.",
-      "cta1": "Únete al Equipo",
-      "cta2": "Asóciate Con Nosotros",
+      "badge1": "Empresa en Crecimiento",
+      "badge2": "Fábrica de Emprendedores",
+      "title1": "De Conductor",
+      "title2": "A Dueño de Tu Destino.",
+      "subtitle": "AUTOS MALL LLC no es solo una empresa de entregas. Somos un ecosistema de transformación que convierte trabajadores en empresarios. Cada entrega que haces te acerca un paso más a ser dueño de tu propio negocio de logística.",
+      "cta1": "Comienza Tu Transformación",
+      "cta2": "Descubre Cómo Funciona",
       "trust1": "Licenciado y Asegurado",
-      "trust2": "Basado en California",
-      "trust3": "Soporte 24/7"
+      "trust2": "Mercado de $177B",
+      "trust3": "Sistema Probado"
     },
     "stats": {
-      "deliveries": "Entregas",
-      "drivers": "Conductores Activos",
-      "satisfaction": "Tasa de Satisfacción",
-      "coverage": "Áreas de Servicio"
+      "deliveries": "Entregas y Creciendo",
+      "drivers": "Equipo en Expansión",
+      "satisfaction": "Compromiso Total",
+      "coverage": "Ubicación"
+    },
+    "opportunity": {
+      "badge": "La Oportunidad",
+      "title": "Un Mercado de $177 Mil Millones. Tu Parte de Él.",
+      "subtitle": "El mercado de última milla crecerá a $453 mil millones para 2035. Quienes lo controlen, controlarán el futuro del comercio. La pregunta es: ¿lo verás desde afuera o tomarás tu parte?",
+      "stat1": "$177B",
+      "stat1Label": "Tamaño Actual del Mercado",
+      "stat2": "156%",
+      "stat2Label": "Crecimiento Proyectado",
+      "stat3": "50%",
+      "stat3Label": "De Costos de Envío",
+      "stat4": "2035",
+      "stat4Label": "Año de Explosión"
     },
     "problem": {
-      "title": "¿Por Qué Elegir AUTOS MALL?",
-      "subtitle": "Entendemos que cada paquete cuenta una historia. Por eso tratamos cada entrega como si fuera para nuestra propia familia.",
-      "problemTitle": "Problemas Comunes de Entrega",
-      "problem1": "Entregas tardías que no cumplen horarios",
-      "problem2": "Paquetes dañados por manejo descuidado",
-      "problem3": "Pobre comunicación y seguimiento",
-      "problem4": "Conductores poco confiables sin verificación",
+      "title": "¿Cansado de Cambiar Tiempo por Dinero?",
+      "subtitle": "Piénsalo: Trabajas 40, 50, 60 horas a la semana. Al final del mes, tienes lo justo para sobrevivir. No estás construyendo patrimonio. No estás creando un legado. ¿Y si hubiera otra forma?",
+      "problemTitle": "La Trampa del Empleo Tradicional",
+      "problem1": "Trabajas duro pero no construyes nada propio",
+      "problem2": "Tu ingreso depende 100% de seguir trabajando",
+      "problem3": "Sin camino hacia la independencia financiera",
+      "problem4": "Comienzas de cero cada mes",
       "solutionTitle": "La Diferencia AUTOS MALL",
-      "solution1": "Seguimiento en tiempo real con ETAs precisos",
-      "solution2": "Manejo cuidadoso - tratamos los paquetes como propios",
-      "solution3": "Prueba fotográfica de cada entrega",
-      "solution4": "Conductores profesionales y verificados"
+      "solution1": "Cada entrega construye hacia TU negocio",
+      "solution2": "Un camino claro de 4 niveles hacia la propiedad",
+      "solution3": "Mentoría de quienes ya lo lograron",
+      "solution4": "Tecnología que acelera tu progreso"
+    },
+    "elevation": {
+      "badge": "El Sistema de Elevación",
+      "title": "Tu Camino Hacia la Libertad",
+      "subtitle": "No creamos empleos. Creamos empresarios. Así es exactamente cómo pasarás de conductor a dueño de negocio.",
+      "level1": {
+        "name": "Colaborador",
+        "timeline": "Meses 0-6",
+        "earnings": "$800-$2,000/semana",
+        "desc": "Empieza a ganar inmediatamente mientras aprendes el negocio. Horarios flexibles, rutas optimizadas, mentor asignado.",
+        "highlight": "No eres un empleado. Eres un socio en entrenamiento."
+      },
+      "level2": {
+        "name": "Asociado",
+        "timeline": "Meses 6-18",
+        "earnings": "$2,000-$3,500/semana",
+        "desc": "Construye tu primer mini-equipo. Gana comisiones por referidos. Accede a rutas premium y capacitación en liderazgo.",
+        "highlight": "Ya no solo entregas. Estás construyendo un equipo."
+      },
+      "level3": {
+        "name": "Socio Estratégico",
+        "timeline": "Meses 18-36",
+        "earnings": "$4,000-$6,000/semana",
+        "desc": "Maneja tu propia operación bajo nuestra sombrilla. Gestiona vehículos y colaboradores. Participa en las utilidades.",
+        "highlight": "Ahora tienes tu propio negocio. Te dimos las herramientas."
+      },
+      "level4": {
+        "name": "DSP Independiente",
+        "timeline": "Mes 36+",
+        "earnings": "$15,000+/mes de utilidad",
+        "desc": "Contrato directo con carriers. Tu propia empresa. Tu propia flota. AUTOS MALL como aliado, no como jefe.",
+        "highlight": "Lo lograste. Eres dueño de tu destino."
+      },
+      "cta": "Ver Tu Camino"
     },
     "howItWorks": {
-      "title": "Cómo Funciona",
-      "subtitle": "Simple, eficiente, confiable. Esa es nuestra promesa.",
+      "title": "Cómo Sucede la Transformación",
+      "subtitle": "Cada paso está diseñado para elevarte. Nada es por accidente.",
       "step1": {
-        "title": "Asignación de Paquetes",
-        "desc": "Los paquetes se asignan a nuestros conductores a través del sistema de rutas inteligentes de UniUni."
+        "title": "Rutas Optimizadas por Tecnología",
+        "desc": "Nuestro sistema de rutas inteligentes maximiza tu puntualidad y tus ganancias por hora. Trabajas más inteligente, no más duro."
       },
       "step2": {
-        "title": "Optimización de Rutas",
-        "desc": "Nuestros conductores siguen rutas optimizadas para garantizar entregas a tiempo."
+        "title": "Mentoría Personalizada",
+        "desc": "Desde el día uno, te conectamos con personas que ya recorrieron el camino. Guía real basada en experiencia real."
       },
       "step3": {
-        "title": "Prueba de Entrega",
-        "desc": "Cada entrega se documenta con prueba fotográfica para total transparencia."
+        "title": "Crecimiento Acelerado",
+        "desc": "Nuestro sistema rastrea tu progreso y personaliza tu camino. Desafíos diarios, victorias semanales, hitos mensuales."
       }
     },
     "features": {
-      "title": "Nuestros Servicios",
-      "subtitle": "Soluciones de entrega completas para cada necesidad.",
+      "title": "La Tecnología Detrás de Tu Éxito",
+      "subtitle": "Hemos construido un ecosistema completo para asegurar tu éxito.",
       "tracking": {
-        "title": "Seguimiento en Tiempo Real",
-        "desc": "Sabe exactamente dónde está su paquete con rastreo GPS."
+        "title": "Todo en Tiempo Real",
+        "desc": "Rastrea tus ganancias, progreso y camino al siguiente nivel en tiempo real. Sin sorpresas."
       },
       "speed": {
-        "title": "Entrega el Mismo Día",
-        "desc": "Entrega rápida y confiable el mismo día para paquetes urgentes."
+        "title": "Pagos Instantáneos",
+        "desc": "Recibe tu pago cada lunes por depósito directo. Ve tus ganancias acumularse durante la semana."
       },
       "care": {
-        "title": "Manejo Cuidadoso",
-        "desc": "Cada paquete se maneja con cuidado, desde la recogida hasta la entrega."
+        "title": "Soporte Comunitario",
+        "desc": "Únete a una comunidad de personas ambiciosas. Celebren victorias juntos. Elévense mutuamente."
       },
       "drivers": {
-        "title": "Conductores Profesionales",
-        "desc": "Conductores verificados y capacitados que representan bien su marca."
+        "title": "Capacitación Profesional",
+        "desc": "Capacitación empresarial gratuita, expertise en logística y habilidades de liderazgo. Todo lo que necesitas para subir de nivel."
       },
       "support": {
-        "title": "Soporte 24/7",
-        "desc": "Nuestro equipo siempre está disponible para ayudar."
+        "title": "Asistencia 24/7",
+        "desc": "¿Preguntas a las 2 AM? Te cubrimos. Nuestro equipo de soporte nunca duerme."
       },
       "coverage": {
-        "title": "Amplia Cobertura",
-        "desc": "Sirviendo áreas principales en California y más allá."
+        "title": "Territorio en Crecimiento",
+        "desc": "Mientras nos expandimos, tus oportunidades crecen. Texas hoy. California mañana. El país después."
+      }
+    },
+    "testimonials": {
+      "badge": "Historias de Éxito",
+      "title": "Ellos Lo Lograron. Tú También Puedes.",
+      "subtitle": "Personas reales que transformaron sus vidas a través de AUTOS MALL.",
+      "testimonial1": {
+        "quote": "Llegué a AUTOS MALL después de perder mi trabajo en la pandemia. Solo quería pagar cuentas. Tres años después, tengo 8 vehículos y un equipo de 12 personas. Gano más que mi ex-jefe.",
+        "name": "María G.",
+        "role": "De Conductora a Dueña de Flota",
+        "result": "8 vehículos, 12 empleados"
+      },
+      "testimonial2": {
+        "quote": "Antes arreglaba carros ajenos 12 horas al día. Un amigo me invitó a AUTOS MALL. Era escéptico. Hoy manejo 15 conductores y estoy a meses de mi propio DSP.",
+        "name": "Carlos R.",
+        "role": "De Mecánico a Gerente de Operaciones",
+        "result": "15 conductores bajo su gestión"
+      },
+      "testimonial3": {
+        "quote": "Necesitaba flexibilidad para mis hijos. AUTOS MALL me la dio. Pero me dio algo más: la visión de que podía ser más que una empleada. Ahora mis hijos ven a su mamá construir un negocio.",
+        "name": "Ana M.",
+        "role": "De Madre Soltera a Emprendedora",
+        "result": "Balance vida-trabajo + ingresos crecientes"
       }
     },
     "drivers": {
       "badge": "Únete al Equipo",
-      "title": "Conviértete en Conductor",
-      "desc": "¿Buscas trabajo flexible con gran potencial de ganancias? Únete a AUTOS MALL LLC como Conductor Contratista Independiente. Usa tu propio vehículo, establece tu horario y gana pago competitivo por entrega.",
+      "title": "Tu Transformación Comienza Aquí",
+      "desc": "Deja de cambiar tiempo por dinero. Empieza a construir algo propio. Buscamos personas ambiciosas listas para tomar control de su futuro financiero.",
       "req1": "Licencia de conducir válida",
       "req2": "Vehículo confiable (auto, van o SUV)",
       "req3": "Smartphone con GPS",
       "req4": "Historial de manejo limpio",
-      "req5": "Capacidad de cargar hasta 50 lbs",
-      "earnings": "Potencial de Ganancias",
+      "req5": "Las GANAS de ser MÁS",
+      "earnings": "Potencial Inicial",
       "earningsValue": "$800-$2,000/semana",
-      "cta": "Aplicar Ahora"
+      "benefits": {
+        "benefit1": "Horario flexible que tú controlas",
+        "benefit2": "Depósito directo semanal",
+        "benefit3": "Mentor asignado desde el día 1",
+        "benefit4": "Camino hacia ser dueño de negocio"
+      },
+      "cta": "Aplicar Ahora",
+      "urgency": "Buscamos personas comprometidas con su crecimiento"
     },
     "cta": {
-      "title": "¿Listo para Comenzar?",
-      "subtitle": "Ya sea que busques unirte a nuestro equipo de conductores o necesites servicios de entrega confiables, estamos aquí para ayudar.",
-      "button1": "Unirse como Conductor",
-      "button2": "Contáctanos",
-      "deliveries": "Paquetes entregados con cuidado",
-      "rating": "Satisfacción del cliente"
+      "title": "La Pregunta No Es Si Puedes Hacerlo",
+      "subtitle": "La pregunta es: ¿Lo intentarás? Cada día que esperas es un día que alguien más está construyendo lo que podría ser tuyo.",
+      "button1": "Comenzar Mi Camino",
+      "button2": "Tengo Preguntas",
+      "deliveries": "Equipo comprometido",
+      "rating": "Con tu éxito"
     },
-    "team": {
-      "badge": "Nuestro Equipo",
-      "title": "Conoce al Equipo",
-      "subtitle": "De propiedad y operación familiar, aportamos un toque personal a cada entrega."
+    "faq": {
+      "badge": "Preguntas Frecuentes",
+      "title": "¿Aún Tienes Dudas?",
+      "q1": "¿Esto es real?",
+      "a1": "Absolutamente. Somos una empresa legalmente establecida en Texas, trabajando para convertirnos en socios de UniUni en el mercado de última milla. Te invitamos a conocernos, hacer preguntas, y ser parte de este crecimiento desde el inicio.",
+      "q2": "¿Qué pasa si no funciona para mí?",
+      "a2": "El sistema funciona si tú trabajas. No prometemos dinero fácil. Prometemos que si te esfuerzas, tendrás un camino claro hacia algo más grande. Ningún contrato te ata.",
+      "q3": "Ya probé delivery antes y no me fue bien",
+      "a3": "La diferencia es que antes estabas solo. Aquí tienes tecnología optimizando tus rutas, una comunidad apoyándote, y personas con experiencia guiándote.",
+      "q4": "¿Necesito dinero para invertir?",
+      "a4": "Nada para empezar como Colaborador. Usa tu vehículo actual, gana desde el día uno. Solo cuando estés listo para crecer hablamos de inversiones. Todo es gradual."
+    },
+    "finalCta": {
+      "title": "Tu Futuro Te Espera",
+      "line1": "En 3 años, estarás en algún lugar.",
+      "line2": "La pregunta es: ¿estarás en el mismo lugar, o habrás construido algo extraordinario?",
+      "line3": "La decisión es tuya. La oportunidad está aquí. El momento es ahora.",
+      "button": "Comenzar Mi Transformación",
+      "disclaimer": "Sin obligación. Sin costo para empezar. Solo el primer paso hacia tu libertad."
     }
   },
   "navigation": {
     "home": "Inicio",
-    "services": "Servicios",
-    "drivers": "Para Conductores",
+    "services": "Cómo Funciona",
+    "drivers": "Comienza Tu Camino",
     "contact": "Contacto",
-    "about": "Nosotros"
+    "about": "Nuestra Misión",
+    "login": "Iniciar Sesión",
+    "apply": "Aplicar Ahora"
   },
   "common": {
     "loading": "Cargando...",
@@ -125,40 +219,159 @@
   "footer": {
     "brand": {
       "name": "AUTOS MALL LLC",
-      "tagline": "Socio de Servicios de Entrega",
-      "description": "Tu socio de confianza para servicios de entrega de última milla. Conectamos paquetes con familias con rapidez, cuidado y confiabilidad."
+      "tagline": "Fábrica de Emprendedores",
+      "description": "No creamos empleos. Creamos dueños de negocios. Únete al ecosistema que está transformando la última milla—una vida a la vez."
     },
     "services": {
-      "title": "Servicios",
-      "sameDay": "Entrega el Mismo Día",
-      "residential": "Entrega Residencial",
-      "commercial": "Entrega Comercial",
-      "tracking": "Seguimiento de Paquetes"
+      "title": "El Sistema",
+      "sameDay": "El Camino de 4 Niveles",
+      "residential": "Optimización de Rutas con IA",
+      "commercial": "Programa de Mentoría",
+      "tracking": "Comunidad y Soporte"
     },
     "company": {
       "title": "Empresa",
-      "about": "Nosotros",
-      "careers": "Empleos",
-      "contact": "Contacto",
+      "about": "Nuestra Misión",
+      "careers": "Únete al Equipo",
+      "contact": "Contáctanos",
       "partner": "Asóciate Con Nosotros"
     },
     "drivers": {
-      "title": "Para Conductores",
-      "apply": "Aplicar Ahora",
+      "title": "Futuros Empresarios",
+      "apply": "Comienza Tu Camino",
       "requirements": "Requisitos",
-      "earnings": "Ganancias",
-      "support": "Soporte para Conductores"
+      "earnings": "Potencial de Ganancias",
+      "support": "Historias de Éxito"
     },
     "stats": {
-      "deliveries": "Entregas",
+      "deliveries": "Paquetes",
       "rating": "Calificación",
-      "drivers": "Conductores",
-      "areas": "Áreas de Servicio"
+      "drivers": "Empresarios",
+      "areas": "Mercados"
     },
     "bottom": {
       "copyright": "© 2025 AUTOS MALL LLC. Todos los derechos reservados.",
-      "partner": "Socio Certificado UniUni",
-      "location": "California, EE.UU."
+      "partner": "Construyendo el Futuro de la Logística",
+      "location": "Houston, Texas, EE.UU."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido de Vuelta, Futuro Empresario",
+      "subtitle": "Inicia sesión para continuar tu camino",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ingresa tu correo",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Ingresa tu contraseña",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar Sesión",
+      "loading": "Iniciando sesión...",
+      "or": "o",
+      "noAccount": "¿Listo para comenzar tu camino?",
+      "registerLink": "Aplica ahora",
+      "driverCta": "¿Quieres transformar tu futuro?",
+      "driverCtaLink": "Comienza aquí →",
+      "backToHome": "Volver al inicio",
+      "registeredSuccess": "¡Aplicación enviada! Revisa tu correo para verificar y comenzar tu transformación."
+    },
+    "register": {
+      "title": "Comienza Tu Transformación",
+      "subtitle": "El primer paso hacia ser dueño de tu futuro",
+      "driverSignup": "Aplicación de Futuro Empresario",
+      "fullName": "Nombre Completo",
+      "fullNamePlaceholder": "Ingresa tu nombre completo",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ingresa tu correo",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Crea una contraseña (mín. 6 caracteres)",
+      "confirmPassword": "Confirmar Contraseña",
+      "confirmPasswordPlaceholder": "Confirma tu contraseña",
+      "terms": "Acepto los",
+      "termsLink": "Términos de Servicio",
+      "and": "y la",
+      "privacyLink": "Política de Privacidad",
+      "submit": "Comenzar Mi Camino",
+      "loading": "Creando tu futuro...",
+      "or": "o",
+      "hasAccount": "¿Ya estás en tu camino?",
+      "loginLink": "Inicia sesión",
+      "backToHome": "Volver al inicio",
+      "passwordMismatch": "Las contraseñas no coinciden",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres"
+    }
+  },
+  "dashboard": {
+    "nav": {
+      "overview": "Mi Progreso",
+      "deliveries": "Entregas",
+      "drivers": "Mi Equipo",
+      "vehicles": "Flota",
+      "tracking": "Seguimiento en Vivo",
+      "payments": "Ganancias",
+      "reports": "Analíticas",
+      "documents": "Documentos",
+      "myDeliveries": "Ruta de Hoy",
+      "myEarnings": "Mis Ganancias",
+      "myVehicle": "Mi Vehículo",
+      "myDocuments": "Mis Documentos",
+      "settings": "Configuración",
+      "help": "Ayuda y Soporte"
+    },
+    "header": {
+      "search": "Buscar...",
+      "profile": "Mi Perfil",
+      "settings": "Configuración",
+      "signOut": "Cerrar Sesión"
+    },
+    "overview": {
+      "title": "Tu Panel de Progreso",
+      "subtitle": "Bienvenido de vuelta, {name}. Sigue construyendo tu futuro."
+    },
+    "stats": {
+      "totalDeliveries": "Total de Entregas",
+      "activeDrivers": "Miembros del Equipo",
+      "pendingDeliveries": "Pendientes",
+      "completedToday": "Completadas Hoy",
+      "myDeliveriesToday": "Entregas de Hoy",
+      "completed": "Completadas",
+      "pending": "Pendientes",
+      "earnings": "Ganancias",
+      "thisMonth": "Este mes",
+      "online": "En línea ahora",
+      "needsAttention": "Requiere atención",
+      "deliveries": "Entregas",
+      "assigned": "Asignadas",
+      "today": "Hoy",
+      "toDeliver": "Por entregar",
+      "thisWeek": "Esta semana"
+    },
+    "recentDeliveries": {
+      "title": "Entregas Recientes",
+      "viewAll": "Ver Todas",
+      "empty": "Sin entregas aún. Tu camino comienza con el primer paquete."
+    },
+    "quickActions": {
+      "title": "Acciones Rápidas",
+      "newDelivery": "Nueva Entrega",
+      "newDeliveryDesc": "Crear una nueva orden de entrega",
+      "manageDrivers": "Gestionar Equipo",
+      "manageDriversDesc": "Ver y hacer crecer tu equipo",
+      "liveTracking": "Seguimiento en Vivo",
+      "liveTrackingDesc": "Rastrea entregas en tiempo real",
+      "viewMyDeliveries": "Ruta de Hoy",
+      "viewMyDeliveriesDesc": "Ve tu ruta optimizada",
+      "viewEarnings": "Mis Ganancias",
+      "viewEarningsDesc": "Rastrea tu progreso al siguiente nivel",
+      "alerts": "Actualizaciones",
+      "noAlerts": "¡Estás al día!"
+    },
+    "elevation": {
+      "title": "Tu Progreso de Elevación",
+      "currentLevel": "Nivel Actual",
+      "nextLevel": "Siguiente Nivel",
+      "progress": "Progreso",
+      "requirements": "Requisitos para el siguiente nivel",
+      "mentor": "Tu Mentor"
     }
   }
 }

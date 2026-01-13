@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white" rx="20"/>
+
+  <!-- Letter A with road -->
+  <path d="M30 150 L65 50 L75 50 L55 100 L85 100 L100 150 L85 150 L77 125 L53 125 L45 150 Z" fill="#1e3a5f"/>
+  <path d="M60 105 L70 105 L65 90 Z" fill="white"/>
+
+  <!-- Road coming from A -->
+  <path d="M50 130 Q30 160 25 175 L35 180 Q45 160 65 130" fill="#374151"/>
+  <path d="M43 155 L47 155" stroke="white" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Letter M with wave effect -->
+  <path d="M105 150 L105 70 L130 110 L155 70 L155 150 L140 150 L140 100 L130 120 L120 100 L120 150 Z" fill="#1e3a5f"/>
+
+  <!-- Wave/hills connecting to green area -->
+  <path d="M100 140 Q120 120 140 140 Q160 160 180 140 L180 180 L100 180 Z" fill="#7cb342" opacity="0.3"/>
+
+  <!-- Small house -->
+  <rect x="155" y="120" width="25" height="25" fill="#f5a623"/>
+  <path d="M152 120 L167.5 105 L183 120 Z" fill="#1e3a5f"/>
+  <rect x="162" y="130" width="8" height="15" fill="#1e3a5f"/>
+
+  <!-- Package icon -->
+  <rect x="130" y="155" width="15" height="12" fill="#f5a623" rx="2"/>
+  <path d="M130 158 L145 158 M137.5 155 L137.5 167" stroke="#1e3a5f" stroke-width="1.5"/>
+
+  <!-- Family silhouette (simplified) -->
+  <circle cx="115" cy="150" r="4" fill="#1e3a5f"/>
+  <rect x="112" y="155" width="6" height="10" fill="#1e3a5f" rx="1"/>
+  <circle cx="125" cy="152" r="3" fill="#1e3a5f"/>
+  <rect x="122.5" y="156" width="5" height="8" fill="#1e3a5f" rx="1"/>
+</svg>

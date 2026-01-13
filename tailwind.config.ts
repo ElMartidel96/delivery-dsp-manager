@@ -7,6 +7,32 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    // Dynamic color classes for dark mode contrast
+    'text-blue-400',
+    'bg-blue-400',
+    'border-blue-400/30',
+    'bg-blue-400/20',
+    // Brand colors (dynamic usage)
+    'text-am-orange',
+    'text-am-green',
+    'text-am-navy',
+    'bg-am-orange',
+    'bg-am-green',
+    'bg-am-navy',
+    'border-am-orange/20',
+    'border-am-orange/30',
+    'border-am-green/20',
+    'border-am-green/30',
+    'border-am-navy/20',
+    'border-am-navy/30',
+    'bg-am-orange/10',
+    'bg-am-orange/20',
+    'bg-am-green/10',
+    'bg-am-green/20',
+    'bg-am-navy/10',
+    'bg-am-navy/20',
+  ],
   theme: {
     container: {
       center: true,

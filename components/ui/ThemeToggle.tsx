@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
 
 export const ThemeToggle: React.FC = () => {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {

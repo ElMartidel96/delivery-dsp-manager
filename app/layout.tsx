@@ -9,20 +9,20 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'AUTOS MALL LLC - Delivery Service Partner',
-  description: 'AUTOS MALL LLC is your trusted Delivery Service Partner. Professional last-mile delivery services in California. Join our team of drivers or partner with us for reliable delivery solutions.',
-  keywords: 'delivery, last-mile, UniUni, DSP, driver, package delivery, California, logistics, same-day delivery',
+  description: 'AUTOS MALL LLC is your trusted Delivery Service Partner. Professional last-mile delivery services in Houston, Texas. Join our team of drivers or partner with us for reliable delivery solutions.',
+  keywords: 'delivery, last-mile, UniUni, DSP, driver, package delivery, Houston, Texas, logistics, same-day delivery',
   authors: [{ name: 'AUTOS MALL LLC' }],
   creator: 'AUTOS MALL LLC',
   openGraph: {
     title: 'AUTOS MALL LLC - Delivery Service Partner',
-    description: 'Professional last-mile delivery services in California. Join our team or partner with us.',
+    description: 'Professional last-mile delivery services in Houston, Texas. Join our team or partner with us.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AUTOS MALL LLC',
-    description: 'Your trusted Delivery Service Partner in California.',
+    description: 'Your trusted Delivery Service Partner in Houston, Texas.',
   },
   robots: {
     index: true,
@@ -42,7 +42,8 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo_amall.PNG" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo_amall.PNG" />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
