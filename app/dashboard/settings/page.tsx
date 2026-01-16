@@ -17,6 +17,11 @@ import {
   Loader2,
   CheckCircle,
   Camera,
+  Lock,
+  Eye,
+  EyeOff,
+  X,
+  AlertCircle,
 } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
@@ -47,6 +52,17 @@ export default function SettingsPage() {
     push: true,
     sms: false,
   });
+
+  // Password change modal states
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmNewPassword, setConfirmNewPassword] = useState('');
+  const [showCurrentPassword, setShowCurrentPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [changingPassword, setChangingPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState('');
+  const [passwordSuccess, setPasswordSuccess] = useState(false);
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -97,6 +113,87 @@ export default function SettingsPage() {
       setSaved(true);
       setTimeout(() => setSaved(false), 3000);
     }
+  };
+
+  const handleChangePassword = async () => {
+    setPasswordError('');
+    setPasswordSuccess(false);
+
+    // Validations
+    if (!currentPassword) {
+      setPasswordError('Ingresa tu contraseña actual');
+      return;
+    }
+
+    if (newPassword.length < 6) {
+      setPasswordError('La nueva contraseña debe tener al menos 6 caracteres');
+      return;
+    }
+
+    if (newPassword !== confirmNewPassword) {
+      setPasswordError('Las contraseñas nuevas no coinciden');
+      return;
+    }
+
+    if (currentPassword === newPassword) {
+      setPasswordError('La nueva contraseña debe ser diferente a la actual');
+      return;
+    }
+
+    setChangingPassword(true);
+
+    try {
+      const supabase = createClient();
+
+      // First, verify current password by trying to sign in
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: currentPassword,
+      });
+
+      if (signInError) {
+        setPasswordError('La contraseña actual es incorrecta');
+        setChangingPassword(false);
+        return;
+      }
+
+      // Update to new password
+      const { error: updateError } = await supabase.auth.updateUser({
+        password: newPassword,
+      });
+
+      if (updateError) {
+        setPasswordError('Error al cambiar la contraseña: ' + updateError.message);
+        setChangingPassword(false);
+        return;
+      }
+
+      // Success
+      setPasswordSuccess(true);
+      setCurrentPassword('');
+      setNewPassword('');
+      setConfirmNewPassword('');
+
+      // Close modal after 2 seconds
+      setTimeout(() => {
+        setShowPasswordModal(false);
+        setPasswordSuccess(false);
+      }, 2000);
+
+    } catch {
+      setPasswordError('Error al cambiar la contraseña');
+    } finally {
+      setChangingPassword(false);
+    }
+  };
+
+  const closePasswordModal = () => {
+    setShowPasswordModal(false);
+    setCurrentPassword('');
+    setNewPassword('');
+    setConfirmNewPassword('');
+    setPasswordError('');
+    setPasswordSuccess(false);
   };
 
   if (loading) {
@@ -329,9 +426,12 @@ export default function SettingsPage() {
           </h2>
         </div>
         <div className="p-6">
-          <Link href="/coming-soon" className="inline-block px-4 py-2 text-sm font-medium text-am-navy dark:text-am-orange border border-am-navy dark:border-am-orange rounded-lg hover:bg-am-navy/10 dark:hover:bg-am-orange/10 transition-colors">
+          <button
+            onClick={() => setShowPasswordModal(true)}
+            className="inline-block px-4 py-2 text-sm font-medium text-am-navy dark:text-am-orange border border-am-navy dark:border-am-orange rounded-lg hover:bg-am-navy/10 dark:hover:bg-am-orange/10 transition-colors"
+          >
             Cambiar Contraseña
-          </Link>
+          </button>
         </div>
       </div>
 
@@ -362,6 +462,153 @@ export default function SettingsPage() {
           </div>
         )}
       </div>
+
+      {/* Password Change Modal */}
+      {showPasswordModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+            onClick={closePasswordModal}
+          />
+
+          {/* Modal */}
+          <div className="relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl w-full max-w-md p-6">
+            {/* Close button */}
+            <button
+              onClick={closePasswordModal}
+              className="absolute top-4 right-4 p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Header */}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 bg-am-navy/10 dark:bg-am-orange/10 rounded-lg">
+                <Lock className="w-6 h-6 text-am-navy dark:text-am-orange" />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  Cambiar Contraseña
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Ingresa tu contraseña actual y la nueva
+                </p>
+              </div>
+            </div>
+
+            {/* Success Message */}
+            {passwordSuccess && (
+              <div className="mb-4 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400" />
+                <p className="text-sm text-green-700 dark:text-green-300">
+                  ¡Contraseña cambiada exitosamente!
+                </p>
+              </div>
+            )}
+
+            {/* Error Message */}
+            {passwordError && (
+              <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg flex items-center gap-3">
+                <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400" />
+                <p className="text-sm text-red-700 dark:text-red-300">{passwordError}</p>
+              </div>
+            )}
+
+            {/* Form */}
+            <div className="space-y-4">
+              {/* Current Password */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                  Contraseña Actual
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <input
+                    type={showCurrentPassword ? 'text' : 'password'}
+                    value={currentPassword}
+                    onChange={(e) => setCurrentPassword(e.target.value)}
+                    className="w-full pl-10 pr-12 py-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-am-navy dark:focus:ring-am-orange text-gray-900 dark:text-white"
+                    placeholder="Ingresa tu contraseña actual"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowCurrentPassword(!showCurrentPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                  >
+                    {showCurrentPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* New Password */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                  Nueva Contraseña
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <input
+                    type={showNewPassword ? 'text' : 'password'}
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                    className="w-full pl-10 pr-12 py-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-am-navy dark:focus:ring-am-orange text-gray-900 dark:text-white"
+                    placeholder="Mínimo 6 caracteres"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowNewPassword(!showNewPassword)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                  >
+                    {showNewPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Confirm New Password */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                  Confirmar Nueva Contraseña
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                  <input
+                    type={showNewPassword ? 'text' : 'password'}
+                    value={confirmNewPassword}
+                    onChange={(e) => setConfirmNewPassword(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-am-navy dark:focus:ring-am-orange text-gray-900 dark:text-white"
+                    placeholder="Repite la nueva contraseña"
+                  />
+                </div>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-3 pt-4">
+                <button
+                  onClick={closePasswordModal}
+                  className="flex-1 px-4 py-2.5 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 rounded-lg font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleChangePassword}
+                  disabled={changingPassword || passwordSuccess}
+                  className="flex-1 px-4 py-2.5 bg-am-navy dark:bg-am-orange text-white rounded-lg font-medium hover:bg-am-navy-light dark:hover:bg-am-orange-light transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                >
+                  {changingPassword ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Cambiando...
+                    </>
+                  ) : (
+                    'Cambiar Contraseña'
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
