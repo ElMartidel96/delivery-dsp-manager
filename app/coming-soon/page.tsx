@@ -62,11 +62,11 @@ export default function MaintenancePage() {
             ¿Necesitas ayuda urgente? Contáctanos:
           </p>
           <a
-            href="mailto:contact@autosmall.com"
+            href="mailto:ops@autosmall.org"
             className="inline-flex items-center gap-2 text-am-navy dark:text-am-orange font-medium hover:underline"
           >
             <Mail className="w-4 h-4" />
-            contact@autosmall.com
+            ops@autosmall.org
           </a>
         </div>
 

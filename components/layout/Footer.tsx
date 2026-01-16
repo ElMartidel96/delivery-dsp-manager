@@ -34,13 +34,13 @@ export const Footer: React.FC = () => {
               {t('brand.description')}
             </p>
             <div className="flex flex-col space-y-2 text-sm text-gray-300">
-              <a href="tel:+13466971041" className="flex items-center gap-2 hover:text-am-orange transition-colors">
+              <a href="tel:+19547954030" className="flex items-center gap-2 hover:text-am-orange transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>(346) 697-1041</span>
+                <span>(954) 795-4030</span>
               </a>
-              <a href="mailto:contact@autosmall.com" className="flex items-center gap-2 hover:text-am-orange transition-colors">
+              <a href="mailto:ops@autosmall.org" className="flex items-center gap-2 hover:text-am-orange transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>contact@autosmall.com</span>
+                <span>ops@autosmall.org</span>
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -123,28 +123,6 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* Stats Bar */}
-        <div className="border-t border-white/20 mt-8 pt-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div>
-              <div className="text-2xl font-bold text-am-orange">10K+</div>
-              <div className="text-xs text-gray-400">{t('stats.deliveries')}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-am-green">4.9</div>
-              <div className="text-xs text-gray-400">{t('stats.rating')}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-am-orange">50+</div>
-              <div className="text-xs text-gray-400">{t('stats.drivers')}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-am-green">CA</div>
-              <div className="text-xs text-gray-400">{t('stats.areas')}</div>
-            </div>
           </div>
         </div>
 

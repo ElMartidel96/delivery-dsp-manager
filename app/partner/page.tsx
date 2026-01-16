@@ -295,7 +295,7 @@ export default function PartnerPage() {
                 {t.backToHome}
               </Link>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                {t.questions} (346) 697-1041
+                {t.questions} (954) 795-4030
               </p>
             </div>
           </div>
@@ -329,9 +329,9 @@ export default function PartnerPage() {
               <Globe className="w-4 h-4" />
               <span>{lang === 'es' ? 'EN' : 'ES'}</span>
             </button>
-            <a href="tel:+13466971041" className="hidden sm:flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-am-orange transition-colors">
+            <a href="tel:+19547954030" className="hidden sm:flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-am-orange transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="text-sm">(346) 697-1041</span>
+              <span className="text-sm">(954) 795-4030</span>
             </a>
             <Link
               href="/register?role=driver"
@@ -659,11 +659,11 @@ export default function PartnerPage() {
             {t.scheduleCall}
           </p>
           <a
-            href="tel:+13466971041"
+            href="tel:+19547954030"
             className="inline-flex items-center gap-2 px-8 py-3 bg-am-orange text-white rounded-lg font-semibold hover:bg-am-orange-light transition-colors"
           >
             <Phone className="w-5 h-5" />
-            {t.callNow} (346) 697-1041
+            {t.callNow} (954) 795-4030
           </a>
         </div>
       </section>

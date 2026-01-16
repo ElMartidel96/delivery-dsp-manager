@@ -32,11 +32,11 @@ const translations = {
     // Contact Cards
     phoneTitle: 'Llámanos',
     phoneDesc: 'Línea directa disponible 24/7',
-    phoneNumber: '(346) 697-1041',
+    phoneNumber: '(954) 795-4030',
 
     emailTitle: 'Escríbenos',
     emailDesc: 'Respuesta en menos de 24 horas',
-    emailAddress: 'contact@autosmall.com',
+    emailAddress: 'ops@autosmall.org',
 
     locationTitle: 'Ubicación',
     locationDesc: 'Oficina principal',
@@ -113,11 +113,11 @@ const translations = {
     // Contact Cards
     phoneTitle: 'Call Us',
     phoneDesc: 'Direct line available 24/7',
-    phoneNumber: '(346) 697-1041',
+    phoneNumber: '(954) 795-4030',
 
     emailTitle: 'Email Us',
     emailDesc: 'Response within 24 hours',
-    emailAddress: 'contact@autosmall.com',
+    emailAddress: 'ops@autosmall.org',
 
     locationTitle: 'Location',
     locationDesc: 'Main office',
@@ -249,7 +249,7 @@ export default function ContactPage() {
               <span>{lang === 'es' ? 'EN' : 'ES'}</span>
             </button>
             <a
-              href="tel:+13466971041"
+              href="tel:+19547954030"
               className="hidden sm:flex items-center gap-2 px-4 py-2 bg-am-orange text-white rounded-lg font-medium text-sm hover:bg-am-orange-light transition-colors"
             >
               <Phone className="w-4 h-4" />
@@ -291,7 +291,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Phone */}
             <a
-              href="tel:+13466971041"
+              href="tel:+19547954030"
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:border-am-orange transition-colors group"
             >
               <div className="w-12 h-12 bg-am-orange/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-am-orange/20 transition-colors">
@@ -304,7 +304,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <a
-              href="mailto:contact@autosmall.com"
+              href="mailto:ops@autosmall.org"
               className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:border-am-green transition-colors group"
             >
               <div className="w-12 h-12 bg-am-green/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-am-green/20 transition-colors">
@@ -536,7 +536,7 @@ export default function ContactPage() {
                     : 'Call us directly and a representative will assist you.'}
                 </p>
                 <a
-                  href="tel:+13466971041"
+                  href="tel:+19547954030"
                   className="block w-full py-3 bg-am-orange text-white rounded-lg font-semibold text-center hover:bg-am-orange-light transition-colors"
                 >
                   {t.phoneNumber}
