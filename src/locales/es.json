@@ -314,7 +314,12 @@
       "invalidCode": "Código inválido, intenta de nuevo",
       "codeSent": "Código enviado a tu teléfono",
       "resendCode": "Reenviar código",
-      "resendIn": "Reenviar en {seconds}s"
+      "resendIn": "Reenviar en {seconds}s",
+      "emailVerification": "Verificación de Email",
+      "emailCodeSent": "Código enviado a tu correo",
+      "emailVerified": "Email verificado",
+      "sendEmailCode": "Verificar",
+      "verifyBothRequired": "Debes verificar tu email y teléfono para continuar"
     }
   },
   "dashboard": {
