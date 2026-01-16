@@ -84,6 +84,21 @@ export default function SettingsPage() {
           setFullName(profileData.full_name || '');
           setPhone(profileData.phone || '');
           setAddress(profileData.address || '');
+        } else {
+          // No profile exists yet, use metadata from user if available
+          const metadata = user.user_metadata || {};
+          setFullName(metadata.full_name || '');
+          setPhone(metadata.phone || '');
+          // Create a temporary profile object for reference
+          setProfile({
+            id: '',
+            user_id: user.id,
+            full_name: metadata.full_name || null,
+            phone: metadata.phone || null,
+            address: null,
+            role: metadata.is_driver_signup ? 'driver' : 'customer',
+            avatar_url: null,
+          });
         }
       }
       setLoading(false);
@@ -95,21 +110,33 @@ export default function SettingsPage() {
   const handleSave = async () => {
     setSaving(true);
     const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
 
+    if (!user) {
+      setSaving(false);
+      return;
+    }
+
+    // Use upsert to create or update the profile
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { error } = await (supabase as any)
       .from('profiles')
-      .update({
+      .upsert({
+        user_id: user.id,
         full_name: fullName,
         phone: phone,
         address: address,
+        role: profile?.role || 'customer',
         updated_at: new Date().toISOString(),
-      })
-      .eq('user_id', profile?.user_id);
+      }, {
+        onConflict: 'user_id'
+      });
 
     setSaving(false);
 
     if (!error) {
+      // Update local profile state
+      setProfile(prev => prev ? { ...prev, full_name: fullName, phone, address } : null);
       setSaved(true);
       setTimeout(() => setSaved(false), 3000);
     }

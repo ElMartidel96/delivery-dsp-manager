@@ -11,6 +11,26 @@ export async function GET(request: Request) {
     const { error } = await supabase.auth.exchangeCodeForSession(code);
 
     if (!error) {
+      // Get the user data
+      const { data: { user } } = await supabase.auth.getUser();
+
+      if (user) {
+        // Create or update the profile with the registration data
+        const metadata = user.user_metadata || {};
+
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        await (supabase as any).from('profiles').upsert({
+          user_id: user.id,
+          full_name: metadata.full_name || null,
+          phone: metadata.phone || null,
+          role: metadata.is_driver_signup ? 'driver' : 'customer',
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        }, {
+          onConflict: 'user_id'
+        });
+      }
+
       // Email verified successfully, redirect to dashboard
       return NextResponse.redirect(`${origin}/dashboard`);
     }
