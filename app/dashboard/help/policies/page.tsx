@@ -320,7 +320,7 @@ export default function PoliciesPage() {
               La comunicación abierta es parte de nuestros valores.
             </p>
             <a
-              href="mailto:contact@autosmall.com"
+              href="mailto:ops@autosmall.org"
               className="inline-flex items-center gap-2 px-4 py-2 bg-am-navy dark:bg-am-orange text-white rounded-lg text-sm font-medium hover:bg-am-navy-light dark:hover:bg-am-orange-light transition-colors"
             >
               <FileText className="w-4 h-4" />

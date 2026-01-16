@@ -95,11 +95,11 @@ export default function HelpPage() {
             Línea directa para emergencias y soporte urgente
           </p>
           <a
-            href="tel:+13466971041"
+            href="tel:+19547954030"
             className="flex items-center gap-2 text-am-navy dark:text-am-orange font-medium text-sm hover:underline"
           >
             <Phone className="w-4 h-4" />
-            +1 (346) 697-1041
+            +1 (954) 795-4030
           </a>
         </div>
 
@@ -112,11 +112,11 @@ export default function HelpPage() {
             Respuesta en menos de 24 horas
           </p>
           <a
-            href="mailto:contact@autosmall.com"
+            href="mailto:ops@autosmall.org"
             className="flex items-center gap-2 text-am-green font-medium text-sm hover:underline"
           >
             <Mail className="w-4 h-4" />
-            contact@autosmall.com
+            ops@autosmall.org
           </a>
         </div>
 

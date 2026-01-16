@@ -160,7 +160,7 @@ export default function MentorshipPage() {
                   Unirme al Programa
                 </Link>
                 <a
-                  href="tel:+13466971041"
+                  href="tel:+19547954030"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 >
                   <Phone className="w-5 h-5" />
