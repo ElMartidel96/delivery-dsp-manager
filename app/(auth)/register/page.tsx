@@ -118,8 +118,8 @@ export default function RegisterPage() {
 
       setEmailCodeSent(true);
       setEmailCountdown(60);
-
-      alert(`Código de verificación para email: ${code}\n(En producción, esto se enviará por correo electrónico)`);
+      // TODO: Integrar con servicio de email (SendGrid, AWS SES, etc.)
+      // Por ahora el código se guarda en estado para pruebas
     } catch {
       setError('Error al enviar el código');
     } finally {
@@ -172,8 +172,8 @@ export default function RegisterPage() {
 
       setPhoneCodeSent(true);
       setPhoneCountdown(60);
-
-      alert(`Código de verificación para teléfono: ${code}\n(En producción, esto se enviará por SMS)`);
+      // TODO: Integrar con Twilio u otro servicio SMS
+      // Por ahora el código se guarda en estado para pruebas
     } catch {
       setError('Error al enviar el código');
     } finally {
